@@ -10,5 +10,6 @@ script:
   - npm ls -g
   - npm list -g
   - npm list
+  - npm root -g
   - npm ls -g | grep expect.js
-  - npm ls -g | grep expect.js | awk '{ print $2 }' FS=@`
+  - npm ls -g | grep expect.js | awk '{ print $2 }' FS=@
