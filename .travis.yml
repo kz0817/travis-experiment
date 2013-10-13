@@ -12,5 +12,6 @@ script:
   - npm list
   - npm root -g
   - npm config list
+  - npm config ls -l
   - npm ls -g | grep expect.js
   - npm ls -g | grep expect.js | awk '{ print $2 }' FS=@
