@@ -8,7 +8,7 @@ install:
   - sudo npm install -g expect.js
 script:
   - npm ls -g
-  - npm ls -g | grep expect.js
-  - npm ls -g | grep expect.js | awk '{ print $2 }' FS=@`
   - npm list -g
   - npm list
+  - npm ls -g | grep expect.js
+  - npm ls -g | grep expect.js | awk '{ print $2 }' FS=@`
