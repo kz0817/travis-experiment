@@ -8,7 +8,7 @@ install:
   - sudo npm install -g expect.js
   - npm install -g mocha
   - npm install -g expect.js
-  - pip install -q django
+  - pip install django
 script:
   - npm prefix -g
   - npm ls -g
