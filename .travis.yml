@@ -3,3 +3,4 @@ compiler:
   - gcc
 script:
   - cat /proc/sys/kernel/core_pattern
+  - ulimit -a
