@@ -1,22 +1,5 @@
 language: cpp
 compiler:
   - gcc
-  - clang
-install:
-  - sudo apt-get install -qq -y npm
-  - sudo npm install -g mocha
-  - sudo npm install -g expect.js
-  - npm install -g mocha
-  - npm install -g expect.js
-  - sudo pip install django
 script:
-  - npm prefix -g
-  - npm ls -g
-  - npm list -g
-  - npm list
-  - npm root -g
-  - npm config list
-  - npm config ls -l
-  - npm ls -g | grep expect.js
-  - npm ls -g | grep expect.js | awk '{ print $2 }' FS=@
-  - cat /proc/cpuinfo
+  - cat /proc/sys/kernel/core_pattern
