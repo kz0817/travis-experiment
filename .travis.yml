@@ -3,7 +3,5 @@ language: cpp
 compiler:
   - gcc
 script:
-  - cat /proc/sys/kernel/core_pattern
-  - ulimit -a
-  - cat /proc/version
   - ps ax
+  - service rsyslog restart; echo $?
